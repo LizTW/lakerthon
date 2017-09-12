@@ -101,8 +101,6 @@ body, html {
 
 a {
   font-weight: 700;
-  color:
-  text-decoration: none;
 }
 
 p {
@@ -110,16 +108,50 @@ p {
   line-height: 1.4;
 }
 
+h1 {
+  font-size: 1.4em;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 1em;
+}
+
 img {
   width: 100%;
   height:auto;
 }
 
+.btn {
+  background-color: #b21e49;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 2.5;
+  text-align: center;
+  box-shadow: 2px 2px 0px #DADADA;
+  height: 2.5em;
+  width: 100%;
+  display: block;
+}
+
+  .btn:hover {
+  background-color: #ff1256;
+  }
+
+  input.btn {
+    background-color: #ff1256;
+  }
+
+    input.btn:hover {
+      background-color: #b21e49;
+    }
+
 /*** HEADER ***/
 
 .main-header {
   width: 100%;
-  background: #eee;
   margin: auto;
 }
 
@@ -135,7 +167,6 @@ img {
 
 nav {
   width: 100%;
-  background: #ddd;
 }
 
 nav ul {
@@ -144,7 +175,7 @@ nav ul {
 }
 
     nav ul li {
-      text-align: center;
+      text-align: right;
       padding: 15px 0;
     }
 
@@ -166,6 +197,33 @@ main {
   margin: auto;
   max-width: 960px;
 }
+
+.countdown-timer {
+  width: 100%;
+  height: auto;
+}
+
+/*** SIDEBAR ***/
+
+.sidebar {
+  width: 100%;
+}
+
+.donate {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+  .donate input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .newsletter input [type="text"] {
+    margin-bottom: 10px;
+    padding: 5px 0;
+  }
+
 
 /*** FOOTER ***/
 
@@ -273,17 +331,16 @@ footer {
        width: 94%;
        max-width: 960px;
        margin: auto;
-       background-color: #ddd;
        padding: 0 3%;
      }
 
      #logo {
-       width: 40%;
+       width: 45%;
        float: left;
      }
 
      nav {
-       width: 60%;
+       width: 50%;
        float: right;
      }
 
@@ -293,25 +350,31 @@ footer {
 
      nav ul li {
        display: inline;
-       padding: 0 1%;
+       padding: 0 3%;
        border: none;
        line-height: 2;
        position: relative;
        top: 16px;
      }
 
-/*** FOOTER ***/
+   /*** SIDEBAR ***/
 
-footer {
-  width: 100%;
+.sidebar {
   clear: both;
-}
-
-#footer-logo {
   width: 30%;
-  margin: auto;
+  float: right;
 }
 
+  /*** FOOTER ***/
+
+  footer {
+    width: 100%;
+  }
+
+  #footer-logo {
+    width: 20%;
+    margin: auto;
+  }
 }
 
 @media (min-width: 940px) {
@@ -324,26 +387,42 @@ footer {
       font-size: 1.4em;
   }
 
-  /*** HEADER ***/
+/*** HEADER ***/
 
-  #logo {
+#logo {
+  width: 30%;
+}
+
+nav {
+  width: 60%;
+}
+
+nav ul li {
+  top: 28px;
+}
+
+/*** MAIN ***/
+
+  main {
+    margin-top: 20px;
+  }
+
+.countdown-timer {
+  margin-top: 25px;
+  padding: 0 4%;
+}
+/*** SIDE BAR ***/
+  .sidebar {
+    clear: none;
     width: 30%;
+    float: right;
   }
 
-  nav {
-    width: 60%;
-  }
-
-  nav ul li {
-    top: 28px;
-  }
-
-  /*** FOOTER ***/
+/*** FOOTER ***/
 
   footer {
     width: 100%;
   }
-
   #footer-logo {
     width: 20%;
     margin: auto;
