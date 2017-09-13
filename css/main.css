@@ -95,6 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body, html {
+  font-family: 'Titillium Web', sans-serif;
   font-size: 16px;
   color: #222;
 }
@@ -150,6 +151,10 @@ img {
 
 /*** HEADER ***/
 
+.main-header {
+  border-bottom: 1px solid #ccc;
+}
+
 #logo {
   width: 100%;
   margin: 0 auto;
@@ -166,7 +171,7 @@ nav {
 
 nav ul {
   list-style: none;
-  padding: 0;
+  padding: 20px;
 }
 
     nav ul li {
@@ -196,24 +201,6 @@ main {
 
 /*** SIDEBAR ***/
 
-.sidebar {
-  width: 100%;
-}
-
-.donate {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
-}
-
-  .donate input {
-    width: 100%;
-    box-sizing: border-box;
-  }
-
-  .newsletter input [type="text"] {
-    margin-bottom: 10px;
-    padding: 5px 0;
-  }
 
 
 /*** FOOTER ***/
@@ -221,21 +208,42 @@ main {
 footer {
   width: 100%;
   margin: auto;
-  border-top: 1px solid #ccc;
-  padding-top: 25px;
-  margin-top: 25px;
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+  margin-top: 20ox;
 }
 
-#footer-logo {
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer a {
+  color: orange;
+}
+
+footer a:hover {
+  color:blue;
+}
+
+footer i:hover {
+  color: blue;
+}
+
+.footer-logo {
   width: 47.5%;
-  margin: auto;
-  float: left;
+  height: 25%;
+
 }
 
+.footer-contact {
+  width: 50%;
+  height: auto;
 
-
-
-
+}
 
 /* ==========================================================================
    Helper classes
@@ -349,24 +357,25 @@ footer {
        top: 16px;
      }
 
-   /*** SIDEBAR ***/
-
-.sidebar {
-  clear: both;
-  width: 30%;
-  float: right;
-}
-
   /*** FOOTER ***/
 
   footer {
-    width: 100%;
+    width: 50%;
+    clear: both;
   }
 
-  #footer-logo {
+  .footer-logo {
     width: 20%;
     margin: auto;
+    float: left;
   }
+
+  .footer-contact {
+    width: 25%;
+    float: right;
+    font-size: .8em;
+  }
+
 }
 
 @media (min-width: 940px) {
@@ -390,30 +399,35 @@ nav {
 }
 
 nav ul li {
-  top: 28px;
+
 }
 
 /*** MAIN ***/
 
   main {
-    margin-top: 20px;
+
   }
 
 /*** SIDE BAR ***/
-  .sidebar {
-    clear: none;
-    width: 30%;
-    float: right;
-  }
+
 
 /*** FOOTER ***/
 
-  footer {
+footer {
     width: 100%;
   }
-  #footer-logo {
-    width: 20%;
+
+  .footer-logo {
+    width: 15%;
     margin: auto;
+    float: left;
+  }
+
+  .footer-contact {
+    width: 50%;
+    float: right;
+    color: orange;
+    font-size: 1em;
   }
 }
 @media print,
