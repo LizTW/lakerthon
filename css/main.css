@@ -150,11 +150,6 @@ img {
 
 /*** HEADER ***/
 
-.main-header {
-  width: 100%;
-  margin: auto;
-}
-
 #logo {
   width: 100%;
   margin: 0 auto;
@@ -198,10 +193,6 @@ main {
   max-width: 960px;
 }
 
-.countdown-timer {
-  width: 100%;
-  height: auto;
-}
 
 /*** SIDEBAR ***/
 
@@ -238,6 +229,7 @@ footer {
 #footer-logo {
   width: 47.5%;
   margin: auto;
+  float: left;
 }
 
 
@@ -407,10 +399,6 @@ nav ul li {
     margin-top: 20px;
   }
 
-.countdown-timer {
-  margin-top: 25px;
-  padding: 0 4%;
-}
 /*** SIDE BAR ***/
   .sidebar {
     clear: none;
