@@ -123,9 +123,18 @@ img {
   height:auto;
 }
 
-.countDownDate p {
+#countDownDate {
   text-align: center;
   font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 80%;
+  font-weight: bold;
+  border: 2px solid #fff;
+  box-shadow: 2px 2px 2px #DADADA;
+  height: 2.5em;
+  width: 100%;
 }
 
 .btn {
