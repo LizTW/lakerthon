@@ -135,6 +135,9 @@ img {
   box-shadow: 2px 2px 2px #DADADA;
   height: 2.5em;
   width: 100%;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  font-weight: bold;
+  color: #79c580;
 }
 
 .btn {
@@ -235,16 +238,26 @@ footer ul li {
   display: inline-block;
 }
 
+footer h2 {
+  color: #e87e38;
+  font-size: 2em;
+}
 footer a {
-  color: orange;
+  color: #ce68a9;
+  font-size: 1.5em;
+}
+
+footer i {
+  color: #79c580;
+
 }
 
 footer a:hover {
-  color:blue;
+  color:#e3c348;
 }
 
 footer i:hover {
-  color: blue;
+  color: #e87e38;
 }
 
 .footer-logo {
