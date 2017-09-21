@@ -123,6 +123,11 @@ img {
   height:auto;
 }
 
+.countDownDate p {
+  text-align: center;
+  font-size: 60px;
+}
+
 .btn {
   background-color: #b21e49;
   border: none;
